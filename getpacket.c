@@ -66,8 +66,8 @@ void getPacket(u_char * arg, const struct pcap_pkthdr * pkthdr, const u_char * p
             printf("Dst Port: %d\n", packet[36]*256 + packet[37]);
         }
 
-        /* Counting the  */
-        sprintf(tmp,"[%d.%d.%d.%d] to [%d.%d.%d.%d]\0",packet[26],packet[27],packet[28],packet[29],packet[30],packet[31],packet[32],packet[33]);
+        /* Counting the times of transfering */
+        sprintf(tmp,"[%d.%d.%d.%d] to [%d.%d.%d.%d]\0", packet[26], packet[27], packet[28], packet[29], packet[30], packet[31], packet[32], packet[33]);
         int flag = 0;
         for(int i=0; i<cnt; i++) {
             if(strcmp(count[i].ip, tmp)==0) {
