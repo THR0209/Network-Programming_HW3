@@ -123,7 +123,7 @@ int main(int argc, char **argv)
     int id = 0;
     pcap_loop(device, n, getPacket, (u_char *)&id);
     printf("--------------------------------------\n\n");
-    printf("[Statistic]\n");
+    printf("[Statistics]\n");
     for(int i=0; i<cnt; i++) {
         printf("%s  %d\n", count[i].ip, count[i].num);
     };
