@@ -125,7 +125,7 @@ int main(int argc, char **argv)
     printf("--------------------------------------\n\n");
     printf("[Statistics]\n");
     for(int i=0; i<cnt; i++) {
-        printf("%s  %d\n", count[i].ip, count[i].num);
+        printf("%s\t%d\n", count[i].ip, count[i].num);
     };
     pcap_close(device);
     return 0;
